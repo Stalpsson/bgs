@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/primary.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script> -->
+    <script type="text/javascript" src="js/builder.js"></script>
+</head>
+
+<body>
+
+    <div class="fixed">
+
+        <h1>t<span class="cash">$</span>'s Boardgames</h1>
+
+        <div class="sort">
+            <!-- TO BE IMPLEMENTED LATER
+            <div class="filter namesearch">
+                <div>Game Search</div>
+                <input type="text" maxlength="20" size="20" placeholder="&#403;&#261;&#625;&#603;">
+            </div>
+            <div class="filter playercountlo">
+                <div>Min Players</div>
+                <input type="text" maxlength="2" size="8" placeholder="-1">
+            </div>
+            <div class="filter playercounthi">
+                <div>Max Players</div>
+                <input type="text" maxlength="2" size="8" placeholder="&#8734;">
+            </div>
+            <div class="filter minrating">
+                <div>Min Rating</div>
+                <input type="text" maxlength="4" size="8" placeholder="11.0">
+            </div>
+            -->
+            <div class="colflex">
+                <div>Sort Results</div>
+                <div class="simpleflex">
+                    <div class="list sortoptions">
+                        <select class="options" id="sort" onchange="sortFunc();">
+                            <option value="rank">Rank</option>
+                            <option value="name">Name</option>
+                            <option value="rating">Rating</option>
+                            <option value="playtime">Playing Time</option>
+                            <!-- <option value="minplayers">Min Players</option> -->
+                            <!-- <option value="maxplayers">Max Players</option> -->
+                        </select>
+                    </div>
+                    <div class="list sortdirection">
+                        <select class="options" id="arrow" onchange="sortFunc();">
+                            <option value="asc">&#8593;</option>
+                            <option value="desc">&#8595;</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main" id="main"></div>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

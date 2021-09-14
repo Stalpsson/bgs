@@ -1,0 +1,124 @@
+html {
+    min-width: 768px;
+}
+
+body {
+    background-color: darkorange;
+    font-family:sans-serif;
+    margin:0%;
+}
+
+h1 {
+    color: darkslategray;
+    background-color: darkorange;
+    text-align: center;
+    padding: .25em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color:midnightblue;
+}
+
+a:hover {
+    color:rgb(55, 55, 172);
+}
+
+.cash {
+    color:steelblue;
+}
+
+.fixed {
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+/* SORT DIV AND CONTENTS STYLING */
+
+.sort {
+    background-color:rgb(96, 192, 0);
+    padding: .5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: 600;
+    color:darkslategrey;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    padding: .25%;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    padding: .25%;
+    flex-direction: column;
+}
+
+.simpleflex {
+    display: flex;
+}
+
+.colflex {
+    display: flex;
+    flex-direction: column;
+    padding: .25%;
+}
+
+.options {
+    height:1.8em;
+}
+
+/* MAIN CONTENTS STYLING */
+
+.main {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding-top: 1em;
+}
+
+.item {
+    font-weight:600;
+    color:rgb(26, 54, 54);
+    background-color:steelblue;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5em;
+}
+
+.object {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: .25%;
+}
+
+.imagediv {
+    display: flex;
+    justify-content: center;
+    padding-right: 2.5%;
+    padding-left: 5%;
+}
+
+.info {
+    padding-left: 1em;
+}
+
+.title {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.titlelink {
+    padding-left: 0%;
+}
+
+
+
+
