@@ -63,14 +63,14 @@ $(document).ready(function(){
                     // FIND A WAY TO ADD THIS CONDITIONALLY 'data-howtoplay="' + $(this).find('wishlistcomment').text() + '" ' +
                     // ALSO THIS 'data-comment="' + $(this).find('comment').text() + '" ' +
                 '"></div>' + 
-                '<div class="object">' +
+                '<div class="title">' + 
+                        $(this).find("name").text() + '</a></div>' +
+                '<div class="object">' +                
                     '<div class="imagediv">' +
-                        '<img class="image" src="' + $(this).find('thumbnail').text() + '"></div>' +
-                    '<div class="info">' +
-                        '<div class="title">' + 
-                            '<a class="titlelink" href="https://boardgamegeek.com/boardgame/' + 
-                                $(this).attr('objectid') + '" target="_blank" rel="noopener noreferrrer">' +
-                                $(this).find("name").text() + '</a></div>' + 
+                        '<a class="titlelink" href="https://boardgamegeek.com/boardgame/' + 
+                        $(this).attr('objectid') + '" target="_blank" rel="noopener noreferrrer">' + 
+                        '<img class="image" src="' + $(this).find('thumbnail').text() + '"></a></div>' +
+                    '<div class="info">' +                         
                         '<div class="avgscore">' + 
                             'BGG Rating: ' +
                             Number(parseFloat($(this).find('rating average').attr('value')).toFixed(1)) + '</div>' +

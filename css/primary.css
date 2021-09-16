@@ -1,12 +1,6 @@
-/*  
-html {
-    min-width: 400px;
-}
-*/
-
 body {
     background-color: darkorange;
-    font-family:sans-serif;
+    font-family:monospace;
     margin:0%;
 }
 
@@ -16,15 +10,8 @@ h1 {
     text-align: center;
     padding: .25em;
     margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color:midnightblue;
-}
-
-a:hover {
-    color:rgb(55, 55, 172);
+    font-family:monospace;
+    font-size: 3em;
 }
 
 .cash {
@@ -46,6 +33,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    font-size: 1.5em;
     font-weight: 600;
     color:darkslategrey;
 }
@@ -70,11 +58,21 @@ a:hover {
 .colflex {
     display: flex;
     flex-direction: column;
-    padding: .25%;
+    padding: .25em;
+}
+
+.opt-names {
+    text-align: center;
 }
 
 .options {
     height:1.8em;
+    background-color: rgb(140, 190, 90);
+    border-color: rgb(48, 65, 15);
+    color:darkslategrey;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: .8em;
 }
 
 /* MAIN CONTENTS STYLING */
@@ -82,23 +80,32 @@ a:hover {
 .main {
     
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    padding-top: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: .5em;
 }
 
 .item {
     font-weight:600;
     color:rgb(26, 54, 54);
     background-color:steelblue;
-    padding: 1em;
-    margin: 1em;
+    padding: .5em;
+    margin: .5em;
     border-radius: .5em;
+}
+
+.title {
+    color: rgb(20, 23, 34);
+    font-family: monospace;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: .25em;
 }
 
 .object {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: .25%;
+    margin: .25%;
 }
 
 .imagediv {
@@ -106,20 +113,15 @@ a:hover {
     justify-content: center;
     padding-right: 2.5%;
     padding-left: 5%;
+
 }
 
 .info {
     padding-left: 1em;
+    font-family:sans-serif;
 }
 
-.title {
-    font-size: large;
-    font-weight: bolder;
-}
 
-.titlelink {
-    padding-left: 0%;
-}
 
 
 
