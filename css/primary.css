@@ -25,11 +25,6 @@ h1 {
     color:steelblue;
 }
 
-.credit {
-    margin: 1em;
-    text-align: center;
-}
-
 .fixed {
     position: sticky;
     overflow: hidden;
@@ -133,6 +128,17 @@ h1 {
     font-family:sans-serif;
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.credit {
+    margin: 1em;
+    text-align: center;
+}
 
 
 
