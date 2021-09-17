@@ -26,13 +26,8 @@ h1 {
 }
 
 .credit {
-    margin-bottom: 1.25em;
-    margin-left: 1em;
-    display: flex;
-}
-
-#credit {
-    align-self: flex-end;
+    margin: 1em;
+    text-align: center;
 }
 
 .fixed {
