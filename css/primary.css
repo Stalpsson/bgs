@@ -4,18 +4,35 @@ body {
     margin:0%;
 }
 
+.site-title {
+    background-color: darkorange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 h1 {
     color: darkslategray;
-    background-color: darkorange;
     text-align: center;
-    padding: .25em;
-    margin: 0;
+    padding: 0;
+    margin: .25em;
     font-family:monospace;
     font-size: 3em;
+    align-self: center;
 }
 
 .cash {
     color:steelblue;
+}
+
+.credit {
+    margin-bottom: 1.25em;
+    margin-left: 1em;
+    display: flex;
+}
+
+#credit {
+    align-self: flex-end;
 }
 
 .fixed {
