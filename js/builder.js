@@ -63,6 +63,7 @@ $(document).ready(function(){
                     'data-howtoplay="' + $(this).find('wishlistcomment').text() + '" ' +
                     // ALSO THIS 'data-comment="' + $(this).find('comment').text() + '" ' +
                 '></div>' + 
+                // REWRITE THIS IN NEW FUNCTION TO BUILD AFTER ALL DATA COLLECTED FROM BGG
                 '<div class="title">' + 
                         $(this).find("name").text() + '</a></div>' +
                 '<div class="object">' +                
