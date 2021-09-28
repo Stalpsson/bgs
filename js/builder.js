@@ -84,7 +84,7 @@ $(document).ready(function(){
                         '<div class="playtime">' +
                             'Playing Time: ' + $(this).find('stats').attr('playingtime') + 'm</div>' +
                         // ADD INFO HERE TO KEEP IN SAME COLUMN
-                        // if data-howtoplay.length > 2 {add '<div class="howtoplay"> + <a href="data-howtoplay">How to Play</a></div>'}
+                        // if data-howtoplay.attr('value') != NULL {add '<div class="howtoplay"> + <a href="data-howtoplay">How to Play</a></div>'}
                     '</div>' +
                 '</div>' + 
             '</div>');
