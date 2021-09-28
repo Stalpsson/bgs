@@ -62,7 +62,7 @@ $(document).ready(function(){
                     'data-playtime="' + $(this).find('stats').attr('playingtime') + '" ' +
                     'data-howtoplay="' + $(this).find('wishlistcomment').text() + '" ' +
                     // ALSO THIS 'data-comment="' + $(this).find('comment').text() + '" ' +
-                '"></div>' + 
+                '></div>' + 
                 '<div class="title">' + 
                         $(this).find("name").text() + '</a></div>' +
                 '<div class="object">' +                
