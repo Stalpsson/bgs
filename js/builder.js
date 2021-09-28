@@ -60,7 +60,7 @@ $(document).ready(function(){
                     'data-maxp="' + $(this).find('stats').attr('maxplayers') + '" ' +
                     'data-rank="' + $(this).find('ranks rank').attr('value') + '" ' +
                     'data-playtime="' + $(this).find('stats').attr('playingtime') + '" ' +
-                    // FIND A WAY TO ADD THIS CONDITIONALLY 'data-howtoplay="' + $(this).find('wishlistcomment').text() + '" ' +
+                    'data-howtoplay="' + $(this).find('wishlistcomment').text() + '" ' +
                     // ALSO THIS 'data-comment="' + $(this).find('comment').text() + '" ' +
                 '"></div>' + 
                 '<div class="title">' + 
@@ -84,6 +84,7 @@ $(document).ready(function(){
                         '<div class="playtime">' +
                             'Playing Time: ' + $(this).find('stats').attr('playingtime') + 'm</div>' +
                         // ADD INFO HERE TO KEEP IN SAME COLUMN
+                        // if data-howtoplay.length > 2 {add '<div class="howtoplay"> + <a href="data-howtoplay">How to Play</a></div>'}
                     '</div>' +
                 '</div>' + 
             '</div>');
