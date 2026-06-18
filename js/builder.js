@@ -6,6 +6,9 @@ $(document).ready(function(){
         $.ajax({
             type: "GET" ,
             url: "https://www.boardgamegeek.com/xmlapi2/collection?username=" + userName + "&stats=1&own=1&excludesubtype=boardgameexpansion" ,
+            headers: { 
+                'Authorization': 'Bearer def72029-6f50-436a-80dc-d7570b15d65c'
+            },
             dataType: "xml" ,
             statusCode: {
                 202: function() {
