@@ -5,7 +5,7 @@ $(document).ready(function(){
     function gameColGetXML() {
         $.ajax({
             type: "GET" ,
-            url: "https://www.boardgamegeek.com/xmlapi2/collection?username=" + userName + "&stats=1&own=1&excludesubtype=boardgameexpansion" ,
+            url: "https://boardgamegeek.com/xmlapi2/collection?username=" + userName + "&stats=1&own=1&excludesubtype=boardgameexpansion" ,
             headers: { 
                 'Authorization': 'Bearer def72029-6f50-436a-80dc-d7570b15d65c'
             },
