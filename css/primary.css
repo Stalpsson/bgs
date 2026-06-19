@@ -125,7 +125,11 @@ h1 {
 
 .info {
     padding-left: 1em;
-    font-family:sans-serif;
+    font-family: sans-serif;
+}
+
+.comment {
+    font-style: italic;
 }
 
 /* FOOTER */

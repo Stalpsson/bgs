@@ -64,7 +64,7 @@ $(document).ready(function(){
                     'data-rank="' + $(this).find('ranks rank').attr('value') + '" ' +
                     'data-playtime="' + $(this).find('stats').attr('playingtime') + '" ' +
                     'data-howtoplay="' + $(this).find('wishlistcomment').text() + '" ' +
-                    // ALSO THIS 'data-comment="' + $(this).find('comment').text() + '" ' +
+                    'data-comment="' + $(this).find('comment').text() + '" ' +
                 '></div>' + 
                 // REWRITE THIS IN NEW FUNCTION TO BUILD AFTER ALL DATA COLLECTED FROM BGG
                 '<div class="title">' + 
@@ -87,6 +87,9 @@ $(document).ready(function(){
                             $(this).find('stats').attr('maxplayers') + '</div>' +
                         '<div class="playtime">' +
                             'Playing Time: ' + $(this).find('stats').attr('playingtime') + 'm</div>' +
+                        '<br>' +
+                        '<div class="comment">' +
+                            $(this).find('comment').text() + '</div>' +
                         // ADD INFO HERE TO KEEP IN SAME COLUMN
                         // if data-howtoplay.attr('value') != NULL {add '<div class="howtoplay"> + <a href="data-howtoplay">How to Play</a></div>'}
                     '</div>' +
@@ -110,10 +113,10 @@ function rankSort() {
         }
         var val1 = getValue(div1), val2 = getValue(div2);
         
-        if ($('#arrow').find(":selected").val() === "desc") {
+        if ($('#arrow').find(":selected").val() === "asc") {
             /* ASCENDING (LOW TO HIGH) RETURN */
             return (val1 < val2) ? 1 : ((val1 > val2) ? -1 : 0);
-        } else if ($('#arrow').find(":selected").val() === "asc") {
+        } else if ($('#arrow').find(":selected").val() === "desc") {
             /* DESCENDING (HIGH TO LOW) RETURN */
             return (val1 > val2) ? 1 : ((val1 < val2) ? -1 : 0);
         }
@@ -134,10 +137,10 @@ function nameSort() {
         }
         var val1 = getValue(div1), val2 = getValue(div2);
         
-        if ($('#arrow').find(":selected").val() === "desc") {
+        if ($('#arrow').find(":selected").val() === "asc") {
             /* ASCENDING (LOW TO HIGH) RETURN */
             return (val1 < val2) ? 1 : ((val1 > val2) ? -1 : 0);
-        } else if ($('#arrow').find(":selected").val() === "asc") {
+        } else if ($('#arrow').find(":selected").val() === "desc") {
             /* DESCENDING (HIGH TO LOW) RETURN */
             return (val1 > val2) ? 1 : ((val1 < val2) ? -1 : 0);
         }
@@ -182,10 +185,10 @@ function timeSort() {
         }
         var val1 = getValue(div1), val2 = getValue(div2);
         
-        if ($('#arrow').find(":selected").val() === "desc") {
+        if ($('#arrow').find(":selected").val() === "asc") {
             /* ASCENDING (LOW TO HIGH) RETURN */
             return (val1 < val2) ? 1 : ((val1 > val2) ? -1 : 0);
-        } else if ($('#arrow').find(":selected").val() === "asc") {
+        } else if ($('#arrow').find(":selected").val() === "desc") {
             /* DESCENDING (HIGH TO LOW) RETURN */
             return (val1 > val2) ? 1 : ((val1 < val2) ? -1 : 0);
         }
